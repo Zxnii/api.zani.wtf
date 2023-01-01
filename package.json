@@ -1,0 +1,34 @@
+{
+  "name": "api.zani.wtf",
+  "version": "1.0.0",
+  "description": "Backend for zani.wtf",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=production node .",
+    "dev": "cross-env NODE_ENV=development node . | pino-pretty"
+  },
+  "author": "zani",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.2",
+    "@types/ws": "^8.5.3",
+    "@types/command-line-args": "^5.2.0",
+    "@types/node": "^18.11.11",
+    "pino-pretty": "^9.1.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@fastify/websocket": "^7.1.1",
+    "@types/node-fetch": "^2.6.2",
+    "@types/ws": "^8.5.3",
+    "command-line-args": "^5.2.1",
+    "cross-env": "^7.0.3",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.10.2",
+    "mongoose": "^6.8.0",
+    "node-fetch": "^2.6.7",
+    "typed-emitter": "^2.1.0"
+  }
+}
