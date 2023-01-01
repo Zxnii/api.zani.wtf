@@ -7,6 +7,6 @@ COPY . .
 RUN npm install
 RUN npm run build
 
-CMD ["npm", "run", "start", "--", "-port", "8002"]
+CMD ["npm", "run", "start", "--", "--port", "8002"]
 
 EXPOSE 8002
